@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>RedWolves</identifier>
+    <version>1.0.0</version>
+    <!--<loadAfter>
+        <li>AnimalVarietyCoat</li>
+    </loadAfter>-->
+    <showCrossPromotions>true</showCrossPromotions>
+    <manifestUri><!--https://raw.githubusercontent.com/NoImageAvailable/CombatExtendedGuns/master/About/Manifest.xml-->todo</manifestUri>
+    <downloadUri><!--https://github.com/NoImageAvailable/CombatExtendedGuns/releases/latest-->todo</downloadUri>
+</Manifest>
