@@ -1,0 +1,147 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MutationDef.xsd">
+	<Pawnmorph.Hediffs.MutationDef Name="RedWolfPart" ParentName="WolfPart" Abstract="true">
+		<classInfluence>RedWolfMorph</classInfluence>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="RedWolfPart">
+		<defName>EtherRedWolfMuzzle</defName>
+		<label>red wolf muzzle</label>
+		<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth.  The tongue and lips retain some human shape allowing a rough form of speech, though it will take time for [PAWN_objective] to get used to it.</description>
+		<mutationTale>GrewCanidMuzzle</mutationTale>
+		<mutationMemory>RedWolfMuzzleMemory</mutationMemory>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>-0.5</minSeverity>
+				<label>bestial</label>
+				<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth.  Almost no human traits remain, making speech incredibly difficult. Many people find [PAWN_possessive] snout and growling voice intimidating</description>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.45</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<SocialImpact>-0.1</SocialImpact>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.20</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>adapted</label>
+				<capMods>
+					<li>
+						<capacity>Talking</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li Class="Pawnmorph.Hediffs.MutationStage">
+				<minSeverity>1.5</minSeverity>
+				<label>paragon</label>
+				<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth.  It manages to blend human and wolf traits elegently, allowing [PAWN_objective] to speak flawlessly.  It's smaller and less intimidating shape compared to other wolf muzzles lend some to even call it cute.</description>
+				<capMods>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<SocialImpact>+0.10</SocialImpact>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>teeth</label>
+						<labelUsedInLogging>False</labelUsedInLogging>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>10.0</power>
+						<cooldownTime>1.5</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+				<severityPerDay>0.25</severityPerDay>
+			</li>
+		</comps>
+		<parts>
+			<li>Jaw</li>
+		</parts>
+		<categories>
+			<li>Major</li>
+		</categories>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="RedWolfPart">
+		<defName>EtherRedWolfEar</defName>
+		<description>Large, fuzzy ears crown [PAWN_nameDef]'s head, flicking and turning independently at the slightest sound of prey.  They tend to fold back any time [PAWN_nameDef] finds [PAWN_objective]self nervous or uncertain.</description>
+		<label>lupine</label>
+		<parts>
+			<li>Ear</li>
+		</parts>
+		<stages>
+			<li>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+			</li>
+		</stages>
+		<modExtensions>
+			<li Class="Pawnmorph.MutationHediffExtension">
+				<parts>
+					<li>Ear</li>
+				</parts>
+				<countToAffect>2</countToAffect>
+				<categories>
+					<li>Major</li>
+				</categories>
+			</li>
+		</modExtensions>
+	</Pawnmorph.Hediffs.MutationDef>
+
+	<Pawnmorph.Hediffs.MutationDef ParentName="RedWolfPart">
+		<defName>EtherRedWolfTail</defName>
+		<label>wolfish tail</label>
+		<description>A slender red wolf-like tail hangs from [PAWN_nameDef]'s spine, alert and waiting for a hunt.</description>
+		<mutationTale>GrewTail</mutationTale>
+		<mutationMemory>RedWolfTailMemory</mutationMemory>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.01</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<parts>
+			<li>Tail</li>
+		</parts>
+		<categories>
+			<li>Major</li>
+		</categories>
+	</Pawnmorph.Hediffs.MutationDef>
+</Defs>
