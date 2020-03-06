@@ -13,5 +13,5 @@ I personally know of and support the Wolf Conservation Center (https://nywolf.or
 
 # Other Links
 
-https://www.fws.gov/southeast/wildlife/mammals/red-wolf/
-https://en.wikipedia.org/wiki/Red_wolf
+- https://www.fws.gov/southeast/wildlife/mammals/red-wolf/
+- https://en.wikipedia.org/wiki/Red_wolf
