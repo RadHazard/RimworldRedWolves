@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Combat Extended</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                
+                <!--<li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Wolf_Red"]/statBases/MoveSpeed</xpath>
+                    <value>
+                        <MoveSpeed>7.9</MoveSpeed>
+                    </value>
+                </li>-->
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Wolf_Red"]/statBases</xpath>
+                    <value>
+                        <MeleeDodgeChance>0.18</MeleeDodgeChance>
+                        <MeleeCritChance>0.63</MeleeCritChance>
+                        <MeleeParryChance>0.23</MeleeParryChance>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Wolf_Red"]/race/baseBodySize</xpath>
+                    <value>
+                        <baseBodySize>2.1</baseBodySize>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Wolf_Red"]/tools</xpath>
+                    <value>
+                        <tools>
+                            <li Class="CombatExtended.ToolCE">
+                                <capacities>
+                                    <li>Bite</li>
+                                </capacities>
+                                <power>10</power>
+                                <cooldownTime>1.65</cooldownTime>
+                                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                                <chanceFactor>0.7</chanceFactor>
+                                <armorPenetration>0.203</armorPenetration>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>head</label>
+                                <capacities>
+                                    <li>Blunt</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.65</cooldownTime>
+                                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                                <chanceFactor>0.2</chanceFactor>
+                                <armorPenetration>0.125</armorPenetration>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>left claw</label>
+                                <capacities>
+                                    <li>Scratch</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.65</cooldownTime>
+                                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+                                <surpriseAttack>
+                                    <extraMeleeDamages>
+                                        <li>
+                                            <def>Stun</def>
+                                            <amount>20</amount>
+                                        </li>
+                                    </extraMeleeDamages>
+                                </surpriseAttack>
+                                <armorPenetration>0.178</armorPenetration>
+                            </li>
+                            <li Class="CombatExtended.ToolCE">
+                                <label>right claw</label>
+                                <capacities>
+                                    <li>Scratch</li>
+                                </capacities>
+                                <power>8</power>
+                                <cooldownTime>1.65</cooldownTime>
+                                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+                                <surpriseAttack>
+                                    <extraMeleeDamages>
+                                        <li>
+                                            <def>Stun</def>
+                                            <amount>20</amount>
+                                        </li>
+                                    </extraMeleeDamages>
+                                </surpriseAttack>
+                                <armorPenetration>0.178</armorPenetration>
+                            </li>
+                        </tools>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="Wolf_Red"]</xpath>
+                    <value>
+                        <li Class="CombatExtended.RacePropertiesExtensionCE">
+                            <bodyShape>Quadruped</bodyShape>
+                        </li>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>
