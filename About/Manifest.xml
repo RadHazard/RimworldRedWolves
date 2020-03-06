@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
-    <identifier>RedWolves</identifier>
+    <identifier>pausbrak.redwolves</identifier>
     <version>1.0.0</version>
-    <!--<loadAfter>
-        <li>AnimalVarietyCoat</li>
-    </loadAfter>-->
-    <showCrossPromotions>true</showCrossPromotions>
-    <manifestUri><!--https://raw.githubusercontent.com/NoImageAvailable/CombatExtendedGuns/master/About/Manifest.xml-->todo</manifestUri>
-    <downloadUri><!--https://github.com/NoImageAvailable/CombatExtendedGuns/releases/latest-->todo</downloadUri>
+    <showCrossPromotions>false</showCrossPromotions>
+    <manifestUri>https://raw.githubusercontent.com/RadHazard/RimworldRedWolves/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/RadHazard/RimworldRedWolves/releases/latest</downloadUri>
 </Manifest>
