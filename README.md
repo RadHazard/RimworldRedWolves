@@ -6,11 +6,18 @@ A smaller, more timid species of wolf, known for their russet color and warbling
 
 They pose somewhat less of a threat than their grey wolf cousins, but make up for it with +20% adorableness. They're quite shy and hard to tame, but should you find yourself a red wolf companion they will make an amazing, loyal friend and/or hauling animal (you monster)
 
+# Recommended Mods
+
+- [Animal Variety Coats](https://steamcommunity.com/sharedfiles/filedetails/?id=1511926373) - Without this, you'll only get red wolves with the original pelt color.  Get this to have all the variations!
+
+# Other Supported Mods
+
+- Combat Extended
+- A Dog Said
+
 # Coming Soon
 
 The initial work for the mod is done, but that doesn't mean I am! There's more to come:
-- A Dog Said patch
-- CE patch
 - Pawnmorpher patch + morph
 
 # Save the Red Wolf
