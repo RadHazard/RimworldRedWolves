@@ -1,0 +1,27 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Schemas/MorphDef.xsd">
+	<Pawnmorph.MorphDef ParentName="CanineMorph">
+		<defName>RedWolfMorph</defName>
+		<label>redwolfmorph</label>
+		<description>Like their wild counterparts, red wolf morphs are slender and less fluffy than their grey wolf cousins. They tend to be smaller and more timid, but are still capable fighters, especially in packs.</description>
+		<race>Wolf_Red</race>
+		<classification>Wolf</classification>
+		<categories>
+			<li>Temperate</li>
+			<li>Combat</li>
+			<li>Canid</li>
+		</categories>
+		<fullTransformation>PawnmorphRedWolfTF</fullTransformation>
+		<partialTransformation>PawnmorphRedWolfTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(112,102,102)</skinColorOverride>
+				<skinColorOverrideSecond>(168,142,125)</skinColorOverrideSecond>
+				<hairColorOverride>(42,36,36)</hairColorOverride>
+			</graphicsSettings>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>RedWolfTransformationMemory</transformationMemory>
+			<revertedMemory>RedWolfTransformationMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>
