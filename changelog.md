@@ -21,3 +21,10 @@
 **Bugfixes**
 - Alternate graphics now work on 1.1.  Apparently they were broken this whole time, sorry!
   Animal Variety Coats is no longer needed in 1.1 (but still recommended anyway!)
+
+# v1.3.1 - Rimworld 1.2 update
+**Features**
+- Updated to Rimworld 1.2
+
+**Changes**
+- Updated the Pawnmorpher patch with a more efficient version from the devs
