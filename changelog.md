@@ -28,3 +28,7 @@
 
 **Changes**
 - Updated the Pawnmorpher patch with a more efficient version from the devs
+
+# v1.3.2 - Pawnmorpher patch update
+**Changes**
+- Updated the Pawnmorpher patch again for the new update (Thanks to IronWolf for providing an updated patch)
