@@ -140,6 +140,8 @@
 					<defName>EtherRedWolfEar</defName>
 					<label>lupine (Red Wolf)</label>
 					<description>A large, fuzzy ear that belongs to a red wolf, which has found its way onto this (un)fortunate pawn through the application of mutagenic mechanites.  It can hear much better than a normal human ear, and some say it looks cute too.</description>
+					<mutationTale>EarsChangedCanid</mutationTale>
+					<mutationMemory>RedWolfEarMemory</mutationMemory>
 					<stages>
 						<li Class="Pawnmorph.Hediffs.MutationStage">
 							<minSeverity>0</minSeverity>
@@ -238,6 +240,7 @@
 					<defName>EtherRedWolfEye</defName>
 					<label>lupine</label>
 					<description>Golden- or orange-colored wolf eyes with a large, black-ringed iris.  They look striking, especially on a mutated human, but alas they are red-green colorblind.  They have inferior visual acuity compared to a human's eyes, but they're well adapted to noticing motion.</description>
+					<mutationMemory>RedWolfEyeMemory</mutationMemory>
 					<stages>
 						<li Class="Pawnmorph.Hediffs.MutationStage">
 							<minSeverity>0</minSeverity>
