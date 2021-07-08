@@ -23,63 +23,6 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
 					<mutationMemory>RedWolfMuzzleMemory</mutationMemory>
 					<stages>
 						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.5</minSeverity>
-							<label>bestial</label>
-							<description>The last traces of humanity in [PAWN_possessive] face have been erased by the out-of-control mechanites, leaving [PAWN_objective] with nothing but a slender red wolf snout, complete with a set of fangs and pointed teeth.  It's well adapted to biting, but talking and most facial expressions are incredibly difficult for [PAWN_nameDef], even with practice.  [PAWN_pronoun] will struggle to engage in any kind of human social behavior.</description>
-							<capMods>
-								<li>
-									<capacity>Talking</capacity>
-									<offset>-0.45</offset>
-								</li>
-								<li>
-									<capacity>Eating</capacity>
-									<offset>0.50</offset>
-								</li>
-							</capMods>
-							<statOffsets>
-								<SocialImpact>-0.10</SocialImpact>
-								<MeleeHitChance>+2.20</MeleeHitChance>
-							</statOffsets>
-						</li>
-						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.49</minSeverity>
-							<label>bestial, new</label>
-							<description>The last traces of humanity in [PAWN_possessive] face have been erased by the out-of-control mechanites, leaving [PAWN_objective] with nothing but a slender red wolf snout, complete with a set of fangs and pointed teeth.  It's well adapted to biting, but talking and most facial expressions are impossibly difficult for [PAWN_nameDef].  Some practice may help lessen the effects, but no matter what [PAWN_possessive] social life will never be the same again.</description>
-							<capMods>
-								<li>
-									<capacity>Talking</capacity>
-									<offset>-0.75</offset>
-								</li>
-								<li>
-									<capacity>Eating</capacity>
-									<offset>0.50</offset>
-								</li>
-							</capMods>
-							<statOffsets>
-								<SocialImpact>-0.20</SocialImpact>
-								<MeleeHitChance>+1.20</MeleeHitChance>
-							</statOffsets>
-						</li>
-						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.25</minSeverity>
-							<labelOverride>forming muzzle (bestial)</labelOverride>
-							<description>[PAWN_nameDef]'s face has grown into a stubby animal muzzle.  [PAWN_possessive] teeth are starting to grow out into fangs, and the skin of [PAWN_possessive] nose has grown black and rough.  It's still too short to bite effectively, and to make matters worse it seems the mechanites are making no effort to preserve [PAWN_nameDef]'s ability to speak.  [PAWN_pronoun] is already struggling to talk, and it will only get worse as the muzzle continues to grow.</description>
-							<capMods>
-								<li>
-									<capacity>Talking</capacity>
-									<offset>-0.30</offset>
-								</li>
-								<li>
-									<capacity>Eating</capacity>
-									<offset>0.20</offset>
-								</li>
-							</capMods>
-							<statOffsets>
-								<SocialImpact>-0.05</SocialImpact>
-							</statOffsets>
-						</li>
-						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.15</minSeverity>
 							<labelOverride>pressing out</labelOverride>
 							<description>[PAWN_nameDef]'s face seems to be changing, the nose and jaw pressing out and looking decidedly more animalistic.</description>
 							<capMods>
@@ -191,22 +134,6 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
 					<mutationMemory>RedWolfEarMemory</mutationMemory>
 					<stages>
 						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.5</minSeverity>
-							<label>deformed</label>
-							<description>Large, deformed red wolf ears crown [PAWN_nameDef]'s head. They wiggle every now and again as if they're trying to move, but they're too stiff to properly do so.  The loud sounds and incessent wiggling are a constant distraction to [PAWN_nameDef], making it a struggle for [PAWN_objective] to concentrate on [PAWN_possessive] job.</description>
-							<partEfficiencyOffset>0.10</partEfficiencyOffset>
-							<statOffsets>
-								<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
-							</statOffsets>
-						</li>
-						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.49</minSeverity>
-							<labelOverride>migrating (deformed)</labelOverride>
-							<description>[PAWN_nameDef]'s seem to be trying to grow even pointier and animalistic, but they're noticably deformed.  Despite this, they have still begun to migrate toward the top of [PAWN_possessive] head.</description>
-							<partEfficiencyOffset>0.05</partEfficiencyOffset>
-						</li>
-						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.2</minSeverity>
 							<labelOverride>pointed</labelOverride>
 							<description>[PAWN_nameDef]'s ears are longer and noticably pointed, making [PAWN_objective] look a bit like an elf.</description>
 						</li>
@@ -252,34 +179,7 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
 					<mutationTale>GrewTail</mutationTale>
 					<mutationMemory>RedWolfTailMemory</mutationMemory>
 					<stages>
-					    <li Class="Pawnmorph.Hediffs.MutationStage">
-							<labelOverride>stunted tail</labelOverride>
-							<minSeverity>-0.5</minSeverity>
-							<description>[PAWN_nameDef]'s tail seems to have stopped growing partway through.  It looks ugly and misshappen and it constantly gets in [PAWN_possessive] way.  Unfortunately, it's too stiff and malformed for [PAWN_objective] to really get used to.</description>
-							<capMods>
-								<li>
-									<capacity>Moving</capacity>
-									<offset>-0.02</offset>
-								</li>
-							</capMods>
-							<statOffsets>
-								<Beauty>-0.50</Beauty>
-								<MeleeDodgeChance>-0.5</MeleeDodgeChance>
-							</statOffsets>
-						</li>
 						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.25</minSeverity>
-							<labelOverride>short tail (malformed)</labelOverride>
-							<description>[PAWN_nameDef] has a short and slender tail.  It's long enough to get in the way but not quite long enough to be useful.  Unfortunately, this particular tail is noticably malformed and likely won't grow in correctly.</description>
-							<capMods>
-								<li>
-									<capacity>Moving</capacity>
-									<offset>-0.01</offset>
-								</li>
-							</capMods>
-						</li>
-						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.15</minSeverity>
 							<labelOverride>stubby tail</labelOverride>
 							<description>[PAWN_nameDef] is starting to grow a tail.  It's still a stub for now, but pretty soon [PAWN_pronoun] is going to need to cut a tail-hole in [PAWN_possessive] pants.</description>
 						</li>
@@ -349,20 +249,7 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
 					<description>Golden- or orange-colored wolf eyes with a large, black-ringed iris.  They look striking, especially on a mutated human, but alas they are red-green colorblind.  They also have inferior visual acuity compared to a human's eyes, but they're well adapted to noticing motion.  A morph with these eyes will suffer at most vision-related tasks but once they adapt to the specialized senses they will fare better in melee combat than a baseline human.</description>
 					<mutationMemory>RedWolfEyeMemory</mutationMemory>
 					<stages>
-					    <li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.50</minSeverity>
-							<labelOverride>lupine (malformed)</labelOverride>
-							<description>[PAWN_nameDef]'s vision has returned in the form of a striking pair of gold-colored wolf eyes, but the malfunctioning mechanites seem to have given [PAWN_objective] the worst of both worlds. [PAWN_pronoun] is now red-green colorblind, but [PAWN_possessive] eyes lack any kind of enhanced motion sensitivity to make up for it.</description>
-							<partEfficiencyOffset>-0.20</partEfficiencyOffset>
-						</li>
 						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.25</minSeverity>
-							<labelOverride>golden (blind)</labelOverride>
-							<description>[PAWN_nameDef] has completely lost the ability to see out of this eye!  It seems something has gone wrong with the mechanites, leaving the golden and increasingly wolf-like eye covered in a milky film.  Thankfully the eye is still visibly changing, so with any luck [PAWN_possessive] vision should eventually return in some capacity...</description>
-							<partEfficiencyOffset>-1.0</partEfficiencyOffset>
-						</li>
-						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>-0.1</minSeverity>
 							<labelOverride>golden</labelOverride>
 							<description>[PAWN_nameDef]'s eyes are turning gold.  Striking, but so far the change doesn't seem to have any practical effect.</description>
 						</li>
