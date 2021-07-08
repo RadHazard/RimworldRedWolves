@@ -2,9 +2,16 @@
 **Features**
 - Updated to Rimworld 1.3 (Still compatable with 1.2 and earlier versions)
 - Additional content for the Pawnmorpher integration
-  - Added support for partial mutation graphics
+  - Added support for progressive mutation graphics to the mutations that have graphics
   - All red wolf mutations now have multiple stages
-  - New Red Wolfmorph backstories
+  - New red wolf morph backstories
+  
+**Balance**
+- Rebalanced red wolf morphs to make them more flavorful while giving them a clear niche.
+  - They now gain bonuses to melee hit chance and dodge, but penalties to vision in addition to their previous stats.  This makes them better in melee but worse at ranged combat and crafting compared to a baseline human.
+  - Compared to regular wolfmorphs, they are smaller and more fragile but have a bonus to melee hit chance, making them more akin to glass cannons.
+  - Paragon morphs lose the majority of their downsides and gain even more bonuses to melee combat, making them overall much less specialized, yet even more highly effective in melee.
+  
 
 
 # v1.3.2 - Pawnmorpher patch update

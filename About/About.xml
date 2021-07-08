@@ -10,6 +10,7 @@
         <li>1.3</li>
     </supportedVersions>
     <loadAfter>
+        <li>tachyonite.pawnmorpher</li>
         <li>tachyonite.pawnmorpherpublic</li>
     </loadAfter>
     <packageId>pausbrak.redwolves</packageId>
