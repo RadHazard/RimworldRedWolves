@@ -1,3 +1,12 @@
+# v1.4.0 - Rimworld 1.3 update
+**Features**
+- Updated to Rimworld 1.3 (Still compatable with 1.2 and earlier versions)
+- Additional content for the Pawnmorpher integration
+  - Added support for partial mutation graphics
+  - All red wolf mutations now have multiple stages
+  - New Red Wolfmorph backstories
+
+
 # v1.3.2 - Pawnmorpher patch update
 **Changes**
 - Updated the Pawnmorpher patch again for the new update (Thanks to IronWolf for providing an updated patch)
