@@ -8,37 +8,74 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Jaw"]/hediffGraphics</xpath>
 					<value>
-						<EtherRedWolfMuzzle>Parts/WolfRed/RedWolf_Jaw</EtherRedWolfMuzzle>
+					    <EtherRedWolfMuzzle>
+						    <path>Parts/WolfRed/RedWolf_Jaw</path>
+						    <severity>
+							    <a0.5>Parts/WolfRed/RedWolf_Jaw</a0.5>
+							    <a0.3>Parts/Partials/PartialMuzzle/PartialMuzzle</a0.3>
+							    <a0.1>Parts/Partials/PartialMuzzle/TinyMuzzle</a0.1>
+						    </severity>
+					    </EtherRedWolfMuzzle>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="left ear" and inFrontOfBody="true"]/hediffGraphics</xpath>
 					<value>
-						<EtherRedWolfEar>Parts/WolfRed/RedWolf_Ear_Left</EtherRedWolfEar>
+					    <EtherRedWolfEar>
+						    <path>Parts/WolfRed/RedWolf_Ear_Left</path>
+						    <severity>
+							    <a0.5>Parts/WolfRed/RedWolf_Ear_Left</a0.5>
+							    <a0.2>Parts/Partials/PointyEar/PointyEar_Left</a0.2>
+						    </severity>
+					    </EtherRedWolfEar>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="left ear" and inFrontOfBody="false"]/hediffGraphics</xpath>
 					<value>
-						<EtherRedWolfEar>Parts/WolfRed/RedWolf_Ear_Left_Behind</EtherRedWolfEar>
+					    <EtherRedWolfEar>
+						    <path>Parts/WolfRed/RedWolf_Ear_Left_Behind</path>
+						    <severity>
+							    <a0.5>Parts/WolfRed/RedWolf_Ear_Left_Behind</a0.5>
+							    <a0.2>Parts/Partials/PointyEar/PointyEar_Left_Behind</a0.2>
+						    </severity>
+					    </EtherRedWolfEar>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="right ear" and inFrontOfBody="true"]/hediffGraphics</xpath>
 					<value>
-						<EtherRedWolfEar>Parts/WolfRed/RedWolf_Ear_Right</EtherRedWolfEar>
+					    <EtherRedWolfEar>
+						    <path>Parts/WolfRed/RedWolf_Ear_Right</path>
+						    <severity>
+							    <a0.5>Parts/WolfRed/RedWolf_Ear_Right</a0.5>
+							    <a0.2>Parts/Partials/PointyEar/PointyEar_Right</a0.2>
+						    </severity>
+					    </EtherRedWolfEar>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="right ear" and inFrontOfBody="false"]/hediffGraphics</xpath>
 					<value>
-						<EtherRedWolfEar>Parts/WolfRed/RedWolf_Ear_Right_Behind</EtherRedWolfEar>
+					    <EtherRedWolfEar>
+						    <path>Parts/WolfRed/RedWolf_Ear_Right_Behind</path>
+						    <severity>
+							    <a0.5>Parts/WolfRed/RedWolf_Ear_Right_Behind</a0.5>
+							    <a0.2>Parts/Partials/PointyEar/PointyEar_Right_Behind</a0.2>
+						    </severity>
+					    </EtherRedWolfEar>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Tail" or bodyPart="tail"]/hediffGraphics[./EtherWolfTail]</xpath>
 					<value>
-						<EtherRedWolfTail>Parts/WolfRed/RedWolf_Tail</EtherRedWolfTail>
+					    <EtherRedWolfTail>
+						    <path>Parts/WolfRed/RedWolf_Tail</path>
+						    <severity>
+							    <a0.5>Parts/WolfRed/RedWolf_Tail</a0.5>
+							    <a0.2>Parts/WolfRed/RedWolf_Tail_Short</a0.2>
+						    </severity>
+					    </EtherRedWolfTail>
 					</value>
 				</li>
 			</operations>
