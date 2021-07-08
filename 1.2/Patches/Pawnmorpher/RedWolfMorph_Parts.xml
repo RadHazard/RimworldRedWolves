@@ -146,7 +146,7 @@
 						<li Class="Pawnmorph.Hediffs.MutationStage">
 							<minSeverity>0</minSeverity>
 							<labelOverride>pointed</labelOverride>
-							<description>[PAWN_nameDef]'s ears are noticably pointed, making [PAWN_objective] look a bit like an elf.</description>
+							<description>[PAWN_nameDef]'s ears are longer and noticably pointed, making [PAWN_objective] look a bit like an elf.</description>
 						</li>
 						<li Class="Pawnmorph.Hediffs.MutationStage">
 							<minSeverity>0.2</minSeverity>
@@ -159,7 +159,7 @@
 							<description>Large, fuzzy wolf ears crown [PAWN_nameDef]'s head, flicking and turning independently at the slightest sound of prey.  They tend to fold back any time [PAWN_nameDef] finds [PAWN_objective]self nervous or uncertain.  [PAWN_nameDef] has yet to get used to them and so the slightest sound tends to distract [PAWN_pronoun] from [PAWN_possessive] work.</description>
 							<partEfficiencyOffset>0.2</partEfficiencyOffset>
 							<statOffsets>
-								<WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+								<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 							</statOffsets>
 						</li>
 						<li Class="Pawnmorph.Hediffs.MutationStage">
@@ -169,6 +169,11 @@
 							<partEfficiencyOffset>0.2</partEfficiencyOffset>
 						</li>
 					</stages>
+					<comps>
+						<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+							<severityPerDay>0.33</severityPerDay>
+						</li>
+					</comps>
 					<parts>
 						<li>Ear</li>
 					</parts>
@@ -191,7 +196,7 @@
 							<description>[PAWN_nameDef] is starting to grow a tail.  It's still short for now, but pretty soon [PAWN_pronoun] is going to need to cut a tail-hole in [PAWN_possessive] pants.</description>
 						</li>
 						<li Class="Pawnmorph.Hediffs.MutationStage">
-							<minSeverity>0.2</minSeverity>
+							<minSeverity>0.3</minSeverity>
 							<labelOverride>short tail</labelOverride>
 							<description>[PAWN_nameDef] has a short and slender tail.  It's long enough to get in the way but not quite long enough to be useful.</description>
 							<capMods>
@@ -227,8 +232,14 @@
 							</capMods>
 						</li>
 					</stages>
+					<comps>
+						<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+							<severityPerDay>0.33</severityPerDay>
+						</li>
+					</comps>
 					<parts>
 						<li>Tail</li>
+						<li>MorphTail</li>
 					</parts>
 					<categories>
 						<li>Major</li>
@@ -258,7 +269,7 @@
 							<description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, but alas [PAWN_pronoun] is now red-green colorblind and can't quite see fine details as well.  With some practice, [PAWN_pronoun] should be able to partially adapt.</description>
 							<partEfficiencyOffset>-0.30</partEfficiencyOffset>
 							<statOffsets>
-								<TradePriceImprovement>+0.05</TradePriceImprovement>
+								<TradePriceImprovement>+0.025</TradePriceImprovement>
 							</statOffsets>
 						</li>
 						<li Class="Pawnmorph.Hediffs.MutationStage">
@@ -267,12 +278,17 @@
 							<description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, but alas [PAWN_pronoun] is now red-green colorblind.  [PAWN_possessive] fine detail vision suffers, but the extra extra motion sensitivity gives [PAWN_objective] a better sense of [PAWN_possessive] prey's movement when hunting.</description>
 							<partEfficiencyOffset>-0.20</partEfficiencyOffset>
 							<statOffsets>
-								<TradePriceImprovement>+0.05</TradePriceImprovement>
-								<MeleeHitChance>+4.4</MeleeHitChance>
-								<MeleeDodgeChance>+3.6</MeleeDodgeChance>
+								<TradePriceImprovement>+0.025</TradePriceImprovement>
+								<MeleeHitChance>+2.2</MeleeHitChance>
+								<MeleeDodgeChance>+1.3</MeleeDodgeChance>
 							</statOffsets>
 						</li>
 					</stages>
+					<comps>
+						<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
+							<severityPerDay>0.50</severityPerDay>
+						</li>
+					</comps>
 					<parts>
 						<li>Eye</li>
 					</parts>
