@@ -5,27 +5,6 @@
 		</mods>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Jaw"]/offsets/north</xpath>
-					<value>
-						<north>
-							<bodyTypes>
-								<Male>(0,0.94)</Male>
-								<Female>(0,0.94)</Female>
-								<Thin>(0,0.94)</Thin>
-								<Hulk>(0,0.94)</Hulk>
-								<Fat>(0,0.94)</Fat>
-							</bodyTypes>
-							<crownTypes>
-								<Average_Wide>(-0.015,0.005)</Average_Wide>
-								<Average_Pointy>(0,0.005)</Average_Pointy>
-								<Narrow_Normal>(0,-0.01)</Narrow_Normal>
-								<Narrow_Wide>(0,-0.01)</Narrow_Wide>
-								<Narrow_Pointy>(0,-0.01)</Narrow_Pointy>
-							</crownTypes>
-						</north>
-					</value>
-				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons/li[bodyPart="Jaw"]/hediffGraphics</xpath>
 					<value>
@@ -47,6 +26,7 @@
 						    <severity>
 							    <a0.5>Parts/WolfRed/RedWolf_Ear_Left</a0.5>
 							    <a0.2>Parts/Partials/PointyEar/PointyEar_Left</a0.2>
+							    <a0.0>Parts/None/None</a0.0>
 						    </severity>
 					    </EtherRedWolfEar>
 					</value>
@@ -59,6 +39,7 @@
 						    <severity>
 							    <a0.5>Parts/WolfRed/RedWolf_Ear_Left_Behind</a0.5>
 							    <a0.2>Parts/Partials/PointyEar/PointyEar_Left_Behind</a0.2>
+							    <a0.0>Parts/None/None</a0.0>
 						    </severity>
 					    </EtherRedWolfEar>
 					</value>
@@ -71,6 +52,7 @@
 						    <severity>
 							    <a0.5>Parts/WolfRed/RedWolf_Ear_Right</a0.5>
 							    <a0.2>Parts/Partials/PointyEar/PointyEar_Right</a0.2>
+							    <a0.0>Parts/None/None</a0.0>
 						    </severity>
 					    </EtherRedWolfEar>
 					</value>
@@ -95,6 +77,7 @@
 						    <severity>
 							    <a0.25>Parts/WolfRed/RedWolf_Tail</a0.25>
 							    <a0.15>Parts/WolfRed/RedWolf_Tail_Short</a0.15>
+							    <a0.0>Parts/None/None</a0.0>
 						    </severity>
 					    </EtherRedWolfTail>
 					</value>
