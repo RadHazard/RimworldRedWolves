@@ -47,6 +47,7 @@
 						    <severity>
 							    <a0.5>Parts/WolfRed/RedWolf_Ear_Left</a0.5>
 							    <a0.2>Parts/Partials/PointyEar/PointyEar_Left</a0.2>
+							    <a0.0>Parts/None/None</a0.0>
 						    </severity>
 					    </EtherRedWolfEar>
 					</value>
@@ -59,6 +60,7 @@
 						    <severity>
 							    <a0.5>Parts/WolfRed/RedWolf_Ear_Left_Behind</a0.5>
 							    <a0.2>Parts/Partials/PointyEar/PointyEar_Left_Behind</a0.2>
+							    <a0.0>Parts/None/None</a0.0>
 						    </severity>
 					    </EtherRedWolfEar>
 					</value>
@@ -71,6 +73,7 @@
 						    <severity>
 							    <a0.5>Parts/WolfRed/RedWolf_Ear_Right</a0.5>
 							    <a0.2>Parts/Partials/PointyEar/PointyEar_Right</a0.2>
+							    <a0.0>Parts/None/None</a0.0>
 						    </severity>
 					    </EtherRedWolfEar>
 					</value>
@@ -95,6 +98,7 @@
 						    <severity>
 							    <a0.25>Parts/WolfRed/RedWolf_Tail</a0.25>
 							    <a0.15>Parts/WolfRed/RedWolf_Tail_Short</a0.15>
+							    <a0.0>Parts/None/None</a0.0>
 						    </severity>
 					    </EtherRedWolfTail>
 					</value>
