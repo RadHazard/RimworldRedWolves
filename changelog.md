@@ -1,3 +1,14 @@
+# v1.4.1 - Balance and Load Folders
+**Balance**
+- Rebalanced red wolf stats along the same line as the changes vanilla wolves got in 1.3
+  - Red wolves are significantly more likely to retaliate on injury or a failed taming attempt.  They are still less likely to do so than timber wolves, however.
+  - Red wolves produce proportionally less filth compared to timber wolves due to being smaller
+  - Removed the nuzzle chance to bring them in line with vanilla canids (RIP wolf nuzzles, you will be missed)
+
+**Technical**
+- Swap from using XML patches to conditional LoadFolders for the Pawnmorpher integration in 1.2 & 1.3.  This should have no visible effect but will probably slightly decrease loading time.
+  
+
 # v1.4.0 - Rimworld 1.3 update
 **Features**
 - Updated to Rimworld 1.3 (Still compatable with 1.2 and earlier versions)
