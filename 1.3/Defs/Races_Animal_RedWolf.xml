@@ -11,12 +11,12 @@
       <useMeatFrom>Wolf_Timber</useMeatFrom>
       <maxPreyBodySize>1.8</maxPreyBodySize>
       <baseBodySize>0.68</baseBodySize>
-      <nuzzleMtbHours>200</nuzzleMtbHours>
-      <manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
-      <manhunterOnDamageChance>0.08</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.70</manhunterOnDamageChance>
     </race>
     <statBases>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+      <FilthRate>1.6</FilthRate>
     </statBases>
   </ThingDef>
 
