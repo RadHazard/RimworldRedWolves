@@ -1,3 +1,8 @@
+# v1.4.2 - Injector fix
+**Bugfixes**
+- Fixed an issue with the Pawnmorpher integration where the red wolf injector would sometimes fail to actually do anything
+
+
 # v1.4.1 - Balance and Load Folders
 **Balance**
 - Rebalanced red wolf stats along the same line as the changes vanilla wolves got in 1.3
@@ -7,7 +12,7 @@
 
 **Technical**
 - Swap from using XML patches to conditional LoadFolders for the Pawnmorpher integration in 1.2 & 1.3.  This should have no visible effect but will probably slightly decrease loading time.
-  
+
 
 # v1.4.0 - Rimworld 1.3 update
 **Features**
