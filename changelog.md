@@ -2,7 +2,7 @@
 **Bugfixes**
 - Fixed the spawn chances of red wolves.  You should see them spawn regularly in the wild now.
 - Red wolves are slightly rarer than timber wolves in Temperate Forests and Temperate Swamps
-- They are significantly rarer than timber wolves in Boreal Forests, but still occasionally spawn there
+- They are significantly rarer than timber wolves in Boreal Forests and Cold Bogs
 - They also rarely spawn in Arid Shrublands
 
 
