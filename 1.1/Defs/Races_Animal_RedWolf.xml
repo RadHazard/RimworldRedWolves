@@ -14,6 +14,13 @@
       <nuzzleMtbHours>200</nuzzleMtbHours>
       <manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.08</manhunterOnDamageChance>
+      <wildBiomes>
+        <BorealForest>0.02</BorealForest>
+        <ColdBog>0.02</ColdBog>
+        <TemperateForest>0.05</TemperateForest>
+        <TemperateSwamp>0.05</TemperateSwamp>
+        <AridShrubland>0.02</AridShrubland>
+      </wildBiomes>
     </race>
     <statBases>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
