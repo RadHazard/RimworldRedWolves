@@ -1,3 +1,11 @@
+# v1.4.3 - Spawn chance fix
+**Bugfixes**
+- Fixed the spawn chances of red wolves.  You should see them spawn regularly in the wild now.
+- Red wolves are slightly rarer than timber wolves in Temperate Forests and Temperate Swamps
+- They are significantly rarer than timber wolves in Boreal Forests, but still occasionally spawn there
+- They also rarely spawn in Arid Shrublands
+
+
 # v1.4.2 - Injector fix
 **Bugfixes**
 - Fixed an issue with the Pawnmorpher integration where the red wolf injector would sometimes fail to actually do anything
