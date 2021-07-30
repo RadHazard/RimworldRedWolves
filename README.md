@@ -10,7 +10,7 @@ They pose somewhat less of a threat than their grey wolf cousins, but make up fo
 
 - [Animal Variety Coats](https://steamcommunity.com/sharedfiles/filedetails/?id=1511926373)
    - (1.0) Without this, you'll only get red wolves with the original pelt color.  Get this to have all the variations!
-   - (1.1) No longer required on 1.1, but still recommended anyway!
+   - (1.1+) No longer required on 1.1 or above, but still recommended anyway!
 
 # Other Supported Mods
 
