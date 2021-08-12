@@ -12,6 +12,7 @@
     <loadAfter>
         <li>tachyonite.pawnmorpher</li>
         <li>tachyonite.pawnmorpherpublic</li>
+        <li>Owlchemist.AnimalGear.Equipment</li>
     </loadAfter>
     <packageId>pausbrak.redwolves</packageId>
     <description>&lt;size=24&gt;Red Wolves&lt;/size&gt;
