@@ -5,7 +5,7 @@
 		    <ThingDef>Wolf_Red</ThingDef>
 		</value>
 	</Operation>
-		<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_SmallAnimalFlakArmor"]/apparel/tags</xpath>
 		<value>
 		    <li>Wolf_Red</li>
@@ -18,7 +18,7 @@
 		    <ThingDef>Wolf_Red</ThingDef>
 		</value>
 	</Operation>
-		<Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="Apparel_SmallAnimalAdvancedHelmet"]/apparel/tags</xpath>
 		<value>
 		    <li>Wolf_Red</li>
