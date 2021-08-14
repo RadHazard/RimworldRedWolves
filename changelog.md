@@ -1,3 +1,10 @@
+# v1.5.0 - Wolf Armor! (Animal Equipment support)
+**Features**
+- Added wolf armor, using the wonderful Animal Gear and Animal Equipment mods.  Requires both mods to work.
+- Custom art for all kinds of armor in Animal Equipment:  Clothing, Plate, Flak, and Power Armor
+- Also includes art for the pet scarf and a custom-made red wolf sweater.
+
+
 # v1.4.3 - Spawn chance fix
 **Bugfixes**
 - Fixed the spawn chances of red wolves.  You should see them spawn regularly in the wild now.

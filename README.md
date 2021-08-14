@@ -12,11 +12,18 @@ They pose somewhat less of a threat than their grey wolf cousins, but make up fo
    - (1.0) Without this, you'll only get red wolves with the original pelt color.  Get this to have all the variations!
    - (1.1+) No longer required on 1.1 or above, but still recommended anyway!
 
+# Mods With Integrations
+
+- [Pawnmorpher](https://steamcommunity.com/sharedfiles/filedetails/?id=1786466855)
+  - Adds a red wolf morph with custom mutations
+- [Animal Gear](https://steamcommunity.com/sharedfiles/filedetails/?id=1541438907) &amp; [Animal Equipment](https://steamcommunity.com/sharedfiles/filedetails/?id=2568865984)
+  - Cute wolf sweaters, armor, and more!
+
 # Other Supported Mods
 
-- Combat Extended
-- A Dog Said
-- Pawnmorpher
+- [Combat Extended](https://steamcommunity.com/sharedfiles/filedetails/?id=1631756268)
+- [A Dog Said](https://steamcommunity.com/sharedfiles/filedetails/?id=746425621)
+
 
 # Save the Red Wolf
 
