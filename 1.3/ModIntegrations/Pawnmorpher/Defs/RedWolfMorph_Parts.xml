@@ -44,49 +44,37 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
 	</Pawnmorph.Hediffs.MutationDef>
 
 	<!-- Ears -->
-	<Pawnmorph.Hediffs.MutationDef ParentName="RedWolfPart">
+	<Pawnmorph.Hediffs.MutationDef ParentName="WolfEarPart">
 		<defName>EtherRedWolfEar</defName>
-		<label>rufine</label>
+		<label>red wolf ear</label>
 		<description>A large, fuzzy ear that belongs to a red wolf, which has found its way onto this (un)fortunate pawn through the application of mutagenic mechanites.  It can hear much better than a normal human ear, and some say it looks cute too.</description>
+		<classInfluence>RedWolfMorph</classInfluence>
 		<mutationTale>EarsChangedCanid</mutationTale>
 		<mutationMemory>RedWolfEarMemory</mutationMemory>
+		<graphics>
+			<LeftEar>Parts/RedWolf/RedWolf_Ear_Left</LeftEar>
+			<LeftEarBehind>Parts/RedWolf/RedWolf_Ear_Left_Behind</LeftEarBehind>
+			<RightEar>Parts/RedWolf/RedWolf_Ear_Right</RightEar>
+			<RightEarBehindHead>Parts/RedWolf/RedWolf_Ear_Right_Behind</RightEarBehindHead>
+		</graphics>
 		<stages>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<labelOverride>pointed</labelOverride>
-				<description>[PAWN_nameDef]'s ears are longer and noticably pointed, making [PAWN_objective] look a bit like an elf.</description>
+			<li function="modify">
+				<stageKey>initial</stageKey>
+				<description>[PAWN_nameDef]'s ear is longer and noticably pointed, making [PAWN_objective] look a bit like an elf.</description>
 			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>0.2</minSeverity>
-				<labelOverride>migrating</labelOverride>
-				<description>[PAWN_nameDef]'s ears are growing flatter and even pointier -- like an animal's -- and have begun to migrate toward the top of [PAWN_possessive] head.  They're starting to get more sensitive to match.</description>
-				<partEfficiencyOffset>0.10</partEfficiencyOffset>
+			<li function="modify">
+				<stageKey>pressing</stageKey>
+				<description>[PAWN_nameDef]'s ear is growing flatter and even pointier -- like an animal's -- and has begun to migrate toward the top of [PAWN_possessive] head.</description>
 			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>0.5</minSeverity>
-				<description>Large, fuzzy red wolf ears crown [PAWN_nameDef]'s head, flicking and turning independently at the slightest sound of prey.  They tend to fold back any time [PAWN_nameDef] finds [PAWN_objective]self nervous or uncertain.  [PAWN_nameDef] has yet to get used to them and so the slightest sound tends to distract [PAWN_pronoun] from [PAWN_possessive] work.</description>
-				<partEfficiencyOffset>0.20</partEfficiencyOffset>
-				<statOffsets>
-					<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
-				</statOffsets>
+			<li function="modify">
+				<stageKey>growing</stageKey>
+				<description>[PAWN_nameDef]'s ear is now triangular and sits atop [PAWN_possessive] head.  It has started to twitch and move in response to both sounds and [PAWN_nameDef]'s emotions, much to [PAWN_possessive] annoyance.</description>
 			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>1</minSeverity>
-				<label>adapted</label>
-				<description>Large, fuzzy red wolf ears crown [PAWN_nameDef]'s head, flicking and turning independently at the slightest sound of prey.  They tend to fold back any time [PAWN_nameDef] finds [PAWN_objective]self nervous or uncertain.  [PAWN_nameDef] has grown used to the sensitivity and is no longer distracted by it.</description>
-				<partEfficiencyOffset>0.20</partEfficiencyOffset>
+			<li function="modify">
+				<stageKey>grown</stageKey>
+				<description>A large, fuzzy red wolf ear crowns [PAWN_nameDef]'s head, flicking and turning independently at the slightest sound of prey.  It tends to fold back any time [PAWN_nameDef] finds [PAWN_objective]self nervous or uncertain.</description>
 			</li>
 		</stages>
-		<comps>
-			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
-				<severityPerDay>0.33</severityPerDay>
-			</li>
-		</comps>
-		<parts>
-			<li>Ear</li>
-		</parts>
-		<categories>
-			<li>Major</li>
-		</categories>
 	</Pawnmorph.Hediffs.MutationDef>
 
 	<!-- Tail -->
