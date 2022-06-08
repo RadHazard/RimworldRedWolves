@@ -84,7 +84,7 @@
 		<label>redwolfmorph partial</label>
 		<description>This person has mechanites in their blood that are providing them with red wolf-esque mutations.</description>
 		<stages>
-			<li Class="Pawnmorph.Hediffs.MorphTransformationStage">
+			<li Class="Pawnmorph.Hediffs.HediffStage_Mutation">
 				<painOffset>0.1</painOffset>
 				<vomitMtbDays>1</vomitMtbDays>
 				<capMods>
