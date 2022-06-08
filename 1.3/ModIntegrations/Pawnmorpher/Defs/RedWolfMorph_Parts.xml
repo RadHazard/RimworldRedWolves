@@ -60,10 +60,10 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
         <mutationTale>EarsChangedCanid</mutationTale>
         <mutationMemory>RedWolfEarMemory</mutationMemory>
         <graphics>
-            <LeftEar>Parts/RedWolf/RedWolf_Ear_Left</LeftEar>
-            <LeftEarBehind>Parts/RedWolf/RedWolf_Ear_Left_Behind</LeftEarBehind>
-            <RightEar>Parts/RedWolf/RedWolf_Ear_Right</RightEar>
-            <RightEarBehindHead>Parts/RedWolf/RedWolf_Ear_Right_Behind</RightEarBehindHead>
+            <LeftEar>Parts/WolfRed/RedWolf_Ear_Left</LeftEar>
+            <LeftEarBehind>Parts/WolfRed/RedWolf_Ear_Left_Behind</LeftEarBehind>
+            <RightEar>Parts/WolfRed/RedWolf_Ear_Right</RightEar>
+            <RightEarBehindHead>Parts/WolfRed/RedWolf_Ear_Right_Behind</RightEarBehindHead>
         </graphics>
         <stagePatches>
             <li function="modify">
@@ -102,7 +102,7 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
         <mutationTale>GrewTail</mutationTale>
         <mutationMemory>RedWolfTailMemory</mutationMemory>
         <graphics>
-            <Tail>Parts/RedWolf/RedWolf_Tail</Tail>
+            <Tail>Parts/WolfRed/RedWolf_Tail</Tail>
         </graphics>
         <stagePatches>
             <li function="modify">
@@ -147,30 +147,38 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
         <stagePatches>
             <li function="modify">
                 <stageKey>initial</stageKey>
-                <description>[PAWN_nameDef]'s eyes are turning gold.  Striking, but so far the change doesn't seem to have any practical effect.</description>
+                <values>
+	                <description>[PAWN_nameDef]'s eyes are turning gold.  Striking, but so far the change doesn't seem to have any practical effect.</description>
+                </values>
             </li>
             <li function="modify">
                 <stageKey>unfamiliar</stageKey>
-                <description>[PAWN_nameDef]'s golden eyes have become increasingly wolflike, losing the ability to differentiate red and green along with some visual acuity.  With time, [PAWN_pronoun] should be able to partially adapt to the difference.</description>
-                <partEfficiencyOffset>-0.30</partEfficiencyOffset>
+                <values>
+		            <description>[PAWN_nameDef]'s golden eyes have become increasingly wolflike, losing the ability to differentiate red and green along with some visual acuity.  With time, [PAWN_pronoun] should be able to partially adapt to the difference.</description>
+		            <partEfficiencyOffset>-0.30</partEfficiencyOffset>
+                </values>
             </li>
             <li function="modify">
                 <stageKey>adapting</stageKey>
-                <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, but alas they leave [PAWN_pronoun] red-green colorblind.  [PAWN_pronoun] has gotten used to them, and has started to hone [PAWN_possessive] hunting instincts to make use of their extra motion sensitivity in combat.</description>
-                <partEfficiencyOffset>-0.20</partEfficiencyOffset>
-                <statOffsets>
-                    <MeleeHitChance>+1.2</MeleeHitChance>
-                    <MeleeDodgeChance>+0.6</MeleeDodgeChance>
-                </statOffsets>
+                <values>
+		            <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, but alas they leave [PAWN_pronoun] red-green colorblind.  [PAWN_pronoun] has gotten used to them, and has started to hone [PAWN_possessive] hunting instincts to make use of their extra motion sensitivity in combat.</description>
+		            <partEfficiencyOffset>-0.20</partEfficiencyOffset>
+		            <statOffsets>
+		                <MeleeHitChance>+1.2</MeleeHitChance>
+		                <MeleeDodgeChance>+0.6</MeleeDodgeChance>
+		            </statOffsets>
+                </values>
             </li>
             <li function="modify">
                 <stageKey>adapted</stageKey>
-                <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, but alas they leave [PAWN_pronoun] red-green colorblind. [PAWN_pronoun]'s sharp hunting instincts more than make up for the lack lack in melee combat.</description>
-                <partEfficiencyOffset>-0.20</partEfficiencyOffset>
-                <statOffsets>
-                    <MeleeHitChance>+1.7</MeleeHitChance>
-                    <MeleeDodgeChance>+0.8</MeleeDodgeChance>
-                </statOffsets>
+                <values>
+		            <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, but alas they leave [PAWN_pronoun] red-green colorblind. [PAWN_pronoun]'s sharp hunting instincts more than make up for the lack lack in melee combat.</description>
+		            <partEfficiencyOffset>-0.20</partEfficiencyOffset>
+		            <statOffsets>
+		                <MeleeHitChance>+1.7</MeleeHitChance>
+		                <MeleeDodgeChance>+0.8</MeleeDodgeChance>
+		            </statOffsets>
+                </values>
             </li>
         </stagePatches>
         <stages>
