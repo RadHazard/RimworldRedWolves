@@ -39,7 +39,7 @@
         <defName>RedwolfmorphConservationForcedGeneral</defName>
         <title>red wolf of wall street</title>
         <titleShort>red wolf</titleShort>
-        <baseDescription>[PAWN_nameDef] was a member of the board for a financially successful yet environmentally disasterous megacorporation on [PAWN_possesive] homeworld.  Radical ecoterrorists bombed the headquarters with mutagen-laced gas, turning many of the board members into the very animals their corporate policies once threatened.  [PAWN_nameDef] escaped the worst of the gas, but they still found themselves partially transformed into an endangered species of wolf.</baseDescription>
+        <baseDescription>[PAWN_nameDef] was a member of the board for a financially successful yet environmentally disasterous megacorporation on [PAWN_possesive] homeworld.  Radical ecoterrorists bombed the headquarters with mutagen-laced gas, turning many of the board members into the very animals their corporate policies once threatened.  [PAWN_nameDef] escaped the worst of the gas, but [PAWN_pronoun] still found [PAWN_objective]self partially transformed into an endangered species of wolf.</baseDescription>
         <slot>Adulthood</slot>
         <bodyTypeFemale>Female</bodyTypeFemale>
         <bodyTypeMale>Male</bodyTypeMale>
