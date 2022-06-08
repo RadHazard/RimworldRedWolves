@@ -6,8 +6,6 @@
 		<race>Wolf_Red</race>
 		<categories>
 			<li>Temperate</li>
-			<li>Combat</li>
-			<li>Canid</li>
 		</categories>
 		<fullTransformation>PawnmorphRedWolfTF</fullTransformation>
 		<partialTransformation>PawnmorphRedWolfTFPartial</partialTransformation>
