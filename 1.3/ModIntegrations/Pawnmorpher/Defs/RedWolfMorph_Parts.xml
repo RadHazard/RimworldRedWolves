@@ -16,29 +16,35 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
 		<stagePatches>
 			<li function="modify">
 				<stageKey>growing</stageKey>
-				<description>[PAWN_nameDef]'s face has grown into a stubby animal muzzle.  [PAWN_possessive] teeth are starting to grow out into fangs, and the skin of [PAWN_possessive] nose has grown black and rough.  It's still too short to bite effectively, though.</description>
-			</li>
-			<li function="modify">
-				<stageKey>adapting</stageKey>
-				<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with.  The tongue and lips retain some humanlike flexibility which allows [PAWN_objective] a rough form of speech, though it'll take [PAWN_objective] some time to get used to it.</description>
-				<statOffsets>
-					<MeleeHitChance>+1.20</MeleeHitChance>
-				</statOffsets>
+				<values>
+					<description>[PAWN_nameDef]'s face has grown into a stubby animal muzzle.  [PAWN_possessive] teeth are starting to grow out into fangs, and the skin of [PAWN_possessive] nose has grown black and rough.  It's still too short to bite effectively, though.</description>
+				</li>
+				<li function="modify">
+					<stageKey>adapting</stageKey>
+					<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with.  The tongue and lips retain some humanlike flexibility which allows [PAWN_objective] a rough form of speech, though it'll take [PAWN_objective] some time to get used to it.</description>
+					<statOffsets>
+						<MeleeHitChance>+1.20</MeleeHitChance>
+					</statOffsets>
+				</values>
 			</li>
 			<li function="modify">
 				<stageKey>adapted</stageKey>
-				<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with, especially now that [PAWN_pronoun]'s had some practice.  The tongue and lips retain some humanlike flexibility allowing [PAWN_objective] a passable (if growly) form of speech now that [PAWN_pronoun] has gotten used to it.</description>
-				<statOffsets>
-					<MeleeHitChance>+2.20</MeleeHitChance>
-				</statOffsets>
+				<values>
+					<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with, especially now that [PAWN_pronoun]'s had some practice.  The tongue and lips retain some humanlike flexibility allowing [PAWN_objective] a passable (if growly) form of speech now that [PAWN_pronoun] has gotten used to it.</description>
+					<statOffsets>
+						<MeleeHitChance>+2.20</MeleeHitChance>
+					</statOffsets>
+				</values>
 			</li>
 			<li function="modify">
 				<stageKey>paragon</stageKey>
-				<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with.  The mechanites have made further modifications and have managed to subtly blend elements of human anatomy into the otherwise-lupine muzzle, allowing [PAWN_objective] to speak and express [PAWN_possessive]self as well as any human despite it.  While [PAWN_nameDef]'s wolfish face may not be beautiful in the traditional sense, the perfectly-sculpted wolf muzzle and head now lends [PAWN_objective] a certain elegance.</description>
-				<statOffsets>
-					<Beauty>+0.50</Beauty>
-					<MeleeHitChance>+2.20</MeleeHitChance>
-				</statOffsets>
+				<values>
+					<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with.  The mechanites have made further modifications and have managed to subtly blend elements of human anatomy into the otherwise-lupine muzzle, allowing [PAWN_objective] to speak and express [PAWN_possessive]self as well as any human despite it.  While [PAWN_nameDef]'s wolfish face may not be beautiful in the traditional sense, the perfectly-sculpted wolf muzzle and head now lends [PAWN_objective] a certain elegance.</description>
+					<statOffsets>
+						<Beauty>+0.50</Beauty>
+						<MeleeHitChance>+2.20</MeleeHitChance>
+					</statOffsets>
+				</values>
 			</li>
 		</stagePatches>
 	</Pawnmorph.Hediffs.MutationDef>
@@ -57,95 +63,76 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
 			<RightEar>Parts/RedWolf/RedWolf_Ear_Right</RightEar>
 			<RightEarBehindHead>Parts/RedWolf/RedWolf_Ear_Right_Behind</RightEarBehindHead>
 		</graphics>
-		<stages>
+		<stagePatches>
 			<li function="modify">
 				<stageKey>initial</stageKey>
-				<description>[PAWN_nameDef]'s ear is longer and noticably pointed, making [PAWN_objective] look a bit like an elf.</description>
+				<values>
+					<description>[PAWN_nameDef]'s ear is longer and noticably pointed, making [PAWN_objective] look a bit like an elf.</description>
+				</values>
 			</li>
 			<li function="modify">
 				<stageKey>pressing</stageKey>
-				<description>[PAWN_nameDef]'s ear is growing flatter and even pointier -- like an animal's -- and has begun to migrate toward the top of [PAWN_possessive] head.</description>
+				<values>
+					<description>[PAWN_nameDef]'s ear is growing flatter and even pointier -- like an animal's -- and has begun to migrate toward the top of [PAWN_possessive] head.</description>
+				</values>
 			</li>
 			<li function="modify">
 				<stageKey>growing</stageKey>
-				<description>[PAWN_nameDef]'s ear is now triangular and sits atop [PAWN_possessive] head.  It has started to twitch and move in response to both sounds and [PAWN_nameDef]'s emotions, much to [PAWN_possessive] annoyance.</description>
+				<values>
+					<description>[PAWN_nameDef]'s ear is now triangular and sits atop [PAWN_possessive] head.  It has started to twitch and move in response to both sounds and [PAWN_nameDef]'s emotions, much to [PAWN_possessive] annoyance.</description>
+				</values>
 			</li>
 			<li function="modify">
 				<stageKey>grown</stageKey>
-				<description>A large, fuzzy red wolf ear crowns [PAWN_nameDef]'s head, flicking and turning independently at the slightest sound of prey.  It tends to fold back any time [PAWN_nameDef] finds [PAWN_objective]self nervous or uncertain.</description>
+				<values>
+					<description>A large, fuzzy red wolf ear crowns [PAWN_nameDef]'s head, flicking and turning independently at the slightest sound of prey.  It tends to fold back any time [PAWN_nameDef] finds [PAWN_objective]self nervous or uncertain.</description>
+				</values>
 			</li>
-		</stages>
+		</stagePatches>
 	</Pawnmorph.Hediffs.MutationDef>
 
 	<!-- Tail -->
-	<Pawnmorph.Hediffs.MutationDef ParentName="RedWolfPart">
+	<Pawnmorph.Hediffs.MutationDef ParentName="WolfTailPart">
 		<defName>EtherRedWolfTail</defName>
 		<label>red wolf tail</label>
 		<description>Due to exposure to mutagenic mechanites, this pawn now has a tail that would ordinarily belong to a red wolf.  It's not good for much other than betraying its owner's mood, but it does slightly help them balance -- especially in the midst of combat.</description>
+		<classInfluence>RedWolfMorph</classInfluence>
 		<mutationTale>GrewTail</mutationTale>
 		<mutationMemory>RedWolfTailMemory</mutationMemory>
-		<stages>
+		<graphics>
+			<Tail>Parts/RedWolf/RedWolf_Tail</Tail>
+		</graphics>
+		<stagePatches>
 			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<labelOverride>stubby tail</labelOverride>
-				<description>[PAWN_nameDef] is starting to grow a tail.  It's still a stub for now, but pretty soon [PAWN_pronoun] is going to need to cut a tail-hole in [PAWN_possessive] pants.</description>
+				<stageKey>initial</stageKey>
+				<values>
+					<description>A small tail has started to grow from [PAWN_nameDef]'s backside.  It's still just a nub for now, but pretty soon [PAWN_pronoun] is going to need to cut a tail-hole in [PAWN_possessive] pants.</description>
+				</values>
 			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>0.15</minSeverity>
-				<labelOverride>short tail</labelOverride>
-				<description>[PAWN_nameDef] has a short and slender tail.  It's long enough to get in the way but not quite long enough to be useful.</description>
-				<capMods>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>-0.01</offset>
-					</li>
-				</capMods>
+			<li function="modify">
+				<stageKey>pressing</stageKey>
+				<values>
+					<description>[PAWN_nameDef]'s growing tail is now short and slender, and is developing into a canid shape.  It's long enough to make wearing pants awkward but not quite long enough to be useful.</description>
+				</values>
 			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>0.25</minSeverity>
-				<description>A slender red wolf-like tail hangs from [PAWN_nameDef]'s spine.  It's cute, but it really gets in the way and tends to betray [PAWN_possessive] mood at the worst times.  [PAWN_pronoun] will get better with it after some practice.</description>
-				<capMods>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>-0.03</offset>
-					</li>
-				</capMods>
-				<statOffsets>
-					<TradePriceImprovement>-0.10</TradePriceImprovement>
-					<MeleeDodgeChance>-1.0</MeleeDodgeChance>
-				</statOffsets>
+			<li function="modify">
+				<stageKey>growing</stageKey>
+				<values>
+					<description>[PAWN_nameDef]'s tail is reaching its full length, and has started to wag and emote.  It's cute, but it tends to betray [PAWN_possessive] mood at the worst times.</description>
+					<statOffsets>
+						<TradePriceImprovement>-0.10</TradePriceImprovement>
+						<MentalBreakThreshold>-0.0375</MentalBreakThreshold>
+						<HuntingStealth>+0.05</HuntingStealth>
+					</statOffsets>
+				</values>
 			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>0.5</minSeverity>
-				<label>partially adapted</label>
-				<description>A slender red wolf-like tail hangs from [PAWN_nameDef]'s spine.  It's cute and [PAWN_pronoun] has gotten used to having it, but it still tends to betray [PAWN_possessive] mood at the worst times.</description>
-				<statOffsets>
-					<TradePriceImprovement>-0.10</TradePriceImprovement>
-				</statOffsets>
+			<li function="modify">
+				<stageKey>grown</stageKey>
+				<values>
+					<description>A slender red wolf-like tail hangs from [PAWN_nameDef]'s spine.  It's cute, and now that [PAWN_nameDef] has gotten used to it, it no longer gives away [PAWN_possessive] mood during trading or poker night.</description>
+				</values>
 			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>1</minSeverity>
-				<label>adapted</label>
-				<description>A slender red wolf-like tail hangs from [PAWN_nameDef]'s spine.  It's cute, and now that [PAWN_nameDef] is used to it, it helps [PAWN_pronoun] a bit with balance.  [PAWN_pronoun] has even developed some discipline with it, meaning [PAWN_possessive] tail will no longer give away [PAWN_possessive] mood during trading or poker night.</description>
-				<capMods>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>0.01</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-		<comps>
-			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
-				<severityPerDay>0.25</severityPerDay>
-			</li>
-		</comps>
-		<parts>
-			<li>Tail</li>
-			<li>MorphTail</li>
-		</parts>
-		<categories>
-			<li>Major</li>
-		</categories>
+		</stagePatches>
 	</Pawnmorph.Hediffs.MutationDef>
 	
 	<!-- Eyes -->
