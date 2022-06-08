@@ -1,120 +1,46 @@
 <Defs>
-	<!-- Base Part -->
-	<Pawnmorph.Hediffs.MutationDef Name="RedWolfPart" ParentName="WolfPart" Abstract="true">
-		<classInfluence>RedWolfMorph</classInfluence>
-	</Pawnmorph.Hediffs.MutationDef>
-
 	<!-- Muzzle -->
-	<Pawnmorph.Hediffs.MutationDef ParentName="RedWolfPart">
+	<Pawnmorph.Hediffs.MutationDef ParentName="WolfJawBase">
 		<defName>EtherRedWolfMuzzle</defName>
 		<label>red wolf muzzle</label>
 		<description>Following exposure to mutagenic mechanites, a slender red wolf snout has replaced this pawn's face completely with a set of fangs and pointed teeth.  It's perfect for biting and tearing through meat, but depending on the exact form the mutation has taken it may severely hampen their ability to speak.
 		
 Wolves are known for hunting with their teeth and not their claws, and wolfmorphs are no different.  With practice, red wolf morphs can use their muzzles to harry their opponents in battle to create openings, which more than makes up for any difficulties they may have at wielding weapons with inflexible paws.</description>
+		<classInfluence>RedWolfMorph</classInfluence>
 		<mutationTale>GrewCanidMuzzle</mutationTale>
 		<mutationMemory>RedWolfMuzzleMemory</mutationMemory>
-		<stages>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<labelOverride>pressing out</labelOverride>
-				<description>[PAWN_nameDef]'s face seems to be changing, the nose and jaw pressing out and looking decidedly more animalistic.</description>
-				<capMods>
-					<li>
-						<capacity>Talking</capacity>
-						<offset>-0.05</offset>
-					</li>
-				</capMods>
-			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>0.15</minSeverity>
-				<labelOverride>forming muzzle</labelOverride>
+		<graphics>
+			<MuzzleMale>Parts/WolfRed/RedWolf_Jaw</MuzzleMale>
+			<MuzzleFemale>Parts/WolfRed/RedWolf_Jaw</MuzzleFemale>
+		</graphics>
+		<stagePatches>
+			<li function="modify">
+				<stageKey>growing</stageKey>
 				<description>[PAWN_nameDef]'s face has grown into a stubby animal muzzle.  [PAWN_possessive] teeth are starting to grow out into fangs, and the skin of [PAWN_possessive] nose has grown black and rough.  It's still too short to bite effectively, though.</description>
-				<capMods>
-					<li>
-						<capacity>Talking</capacity>
-						<offset>-0.10</offset>
-					</li>
-					<li>
-						<capacity>Eating</capacity>
-						<offset>0.20</offset>
-					</li>
-				</capMods>
 			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>0.25</minSeverity>
+			<li function="modify">
+				<stageKey>adapting</stageKey>
 				<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with.  The tongue and lips retain some humanlike flexibility which allows [PAWN_objective] a rough form of speech, though it'll take [PAWN_objective] some time to get used to it.</description>
-				<capMods>
-					<li>
-						<capacity>Talking</capacity>
-						<offset>-0.20</offset>
-					</li>
-					<li>
-						<capacity>Eating</capacity>
-						<offset>0.50</offset>
-					</li>
-				</capMods>
 				<statOffsets>
 					<MeleeHitChance>+1.20</MeleeHitChance>
 				</statOffsets>
 			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>1</minSeverity>
+			<li function="modify">
+				<stageKey>adapted</stageKey>
 				<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with, especially now that [PAWN_pronoun]'s had some practice.  The tongue and lips retain some humanlike flexibility allowing [PAWN_objective] a passable (if growly) form of speech now that [PAWN_pronoun] has gotten used to it.</description>
-				<label>adapted</label>
-				<capMods>
-					<li>
-						<capacity>Talking</capacity>
-						<offset>-0.10</offset>
-					</li>
-					<li>
-						<capacity>Eating</capacity>
-						<offset>0.50</offset>
-					</li>
-				</capMods>
 				<statOffsets>
 					<MeleeHitChance>+2.20</MeleeHitChance>
 				</statOffsets>
 			</li>
-			<li Class="Pawnmorph.Hediffs.MutationStage">
-				<minSeverity>1.25</minSeverity>
-				<label>paragon</label>
+			<li function="modify">
+				<stageKey>paragon</stageKey>
 				<description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with.  The mechanites have made further modifications and have managed to subtly blend elements of human anatomy into the otherwise-lupine muzzle, allowing [PAWN_objective] to speak and express [PAWN_possessive]self as well as any human despite it.  While [PAWN_nameDef]'s wolfish face may not be beautiful in the traditional sense, the perfectly-sculpted wolf muzzle and head now lends [PAWN_objective] a certain elegance.</description>
-				<capMods>
-					<li>
-						<capacity>Eating</capacity>
-						<offset>0.50</offset>
-					</li>
-				</capMods>
 				<statOffsets>
 					<Beauty>+0.50</Beauty>
 					<MeleeHitChance>+2.20</MeleeHitChance>
 				</statOffsets>
 			</li>
-		</stages>
-		<comps>
-			<li Class="HediffCompProperties_VerbGiver">
-				<tools>
-					<li>
-						<label>teeth</label>
-						<labelUsedInLogging>False</labelUsedInLogging>
-						<capacities>
-							<li>Bite</li>
-						</capacities>
-						<power>10.0</power>
-						<cooldownTime>1.5</cooldownTime>
-						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-					</li>
-				</tools>
-			</li>
-			<li Class="Pawnmorph.Hediffs.CompProperties_MutationSeverityAdjust">
-				<severityPerDay>0.125</severityPerDay>
-			</li>
-		</comps>
-		<parts>
-			<li>Jaw</li>
-		</parts>
-		<categories>
-			<li>Major</li>
-		</categories>
+		</stagePatches>
 	</Pawnmorph.Hediffs.MutationDef>
 
 	<!-- Ears -->
