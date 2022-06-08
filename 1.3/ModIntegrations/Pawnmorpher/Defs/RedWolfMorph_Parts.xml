@@ -22,8 +22,8 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
             </li>
             <li function="modify">
                 <stageKey>adapting</stageKey>
-                <description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with.  The tongue and lips retain some humanlike flexibility which allows [PAWN_objective] a rough form of speech, though it'll take [PAWN_objective] some time to get used to it.</description>
                 <values>
+                    <description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with.  The tongue and lips retain some humanlike flexibility which allows [PAWN_objective] a rough form of speech, though it'll take [PAWN_objective] some time to get used to it.</description>
                     <statOffsets>
                         <MeleeHitChance>+1.20</MeleeHitChance>
                     </statOffsets>
@@ -105,7 +105,7 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
             <Tail>Parts/RedWolf/RedWolf_Tail</Tail>
         </graphics>
         <stagePatches>
-            <li Class="Pawnmorph.Hediffs.MutationStage">
+            <li function="modify">
                 <stageKey>initial</stageKey>
                 <values>
                     <description>A small tail has started to grow from [PAWN_nameDef]'s backside.  It's still just a nub for now, but pretty soon [PAWN_pronoun] is going to need to cut a tail-hole in [PAWN_possessive] pants.</description>
@@ -142,25 +142,20 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
         <defName>EtherRedWolfEye</defName>
         <label>red wolf eye</label>
         <description>Golden- or orange-colored wolf eyes with a large, black-ringed iris.  They look striking, especially on a mutated human, but alas they are red-green colorblind.  They also have inferior visual acuity compared to a human's eyes, but they're well adapted to noticing motion.  A morph with these eyes will suffer at most vision-related tasks but once they adapt to the specialized senses they will fare better in melee combat than a baseline human.</description>
+        <classInfluence>RedWolfMorph</classInfluence>
         <mutationMemory>RedWolfEyeMemory</mutationMemory>
-        <stages>
-            <li Class="Pawnmorph.Hediffs.MutationStage">
-                <key>initial</key>
-                <label>initial</label>
-                <minSeverity>0</minSeverity>
+        <stagePatches>
+            <li function="modify">
+                <stageKey>initial</stageKey>
                 <description>[PAWN_nameDef]'s eyes are turning gold.  Striking, but so far the change doesn't seem to have any practical effect.</description>
             </li>
-            <li Class="Pawnmorph.Hediffs.MutationStage">
-                <key>unfamiliar</key>
-                <label>unfamiliar</label>
-                <minSeverity>0.3</minSeverity>
+            <li function="modify">
+                <stageKey>unfamiliar</stageKey>
                 <description>[PAWN_nameDef]'s golden eyes have become increasingly wolflike, losing the ability to differentiate red and green along with some visual acuity.  With time, [PAWN_pronoun] should be able to partially adapt to the difference.</description>
                 <partEfficiencyOffset>-0.30</partEfficiencyOffset>
             </li>
-            <li Class="Pawnmorph.Hediffs.MutationStage">
-                <key>adapting</key>
-                <label>adapting</label>
-                <minSeverity>0.5</minSeverity>
+            <li function="modify">
+                <stageKey>adapting</stageKey>
                 <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, but alas they leave [PAWN_pronoun] red-green colorblind.  [PAWN_pronoun] has gotten used to them, and has started to hone [PAWN_possessive] hunting instincts to make use of their extra motion sensitivity in combat.</description>
                 <partEfficiencyOffset>-0.20</partEfficiencyOffset>
                 <statOffsets>
@@ -168,10 +163,8 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
                     <MeleeDodgeChance>+0.6</MeleeDodgeChance>
                 </statOffsets>
             </li>
-            <li Class="Pawnmorph.Hediffs.MutationStage">
-                <key>adapted</key>
-                <label>adapted</label>
-                <minSeverity>1</minSeverity>
+            <li function="modify">
+                <stageKey>adapted</stageKey>
                 <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, but alas they leave [PAWN_pronoun] red-green colorblind. [PAWN_pronoun]'s sharp hunting instincts more than make up for the lack lack in melee combat.</description>
                 <partEfficiencyOffset>-0.20</partEfficiencyOffset>
                 <statOffsets>
@@ -179,10 +172,12 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
                     <MeleeDodgeChance>+0.8</MeleeDodgeChance>
                 </statOffsets>
             </li>
+        </stagePatches>
+        <stages>
             <li Class="Pawnmorph.Hediffs.MutationStage">
                 <key>paragon</key>
                 <label>paragon</label>
-                <minSeverity>1.25</minSeverity>
+                <minSeverity>2.5</minSeverity>
                 <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, and thanks to further adaption by the mechanites, have regained most of their tri-color vision.  The combination of a predator's hunting instincts and a human's tri-color vision gives [PAWN_objective] an overwhelming advantage against [PAWN_possessive] prey in melee combat.</description>
                 <partEfficiencyOffset>-0.05</partEfficiencyOffset>
                 <statOffsets>
