@@ -3,9 +3,9 @@
     <Pawnmorph.Hediffs.MutationDef ParentName="WolfJawBase">
         <defName>EtherRedWolfMuzzle</defName>
         <label>red wolf muzzle</label>
-        <description>Following exposure to mutagenic mechanites, a slender red wolf snout has replaced this pawn's face completely with a set of fangs and pointed teeth.  It's perfect for biting and tearing through meat, but depending on the exact form the mutation has taken it may severely hampen their ability to speak.
+        <description>Following exposure to mutagenic mechanites, a slender red wolf snout has replaced this pawn's face completely with a set of fangs and pointed teeth.  It's perfect for biting and tearing through meat.
         
-Wolves are known for hunting with their teeth and not their claws, and wolfmorphs are no different.  With practice, red wolf morphs can use their muzzles to harry their opponents in battle to create openings, which more than makes up for any difficulties they may have at wielding weapons with inflexible paws.</description>
+Wolves are known for hunting with their teeth and not their claws, and wolfmorphs are no different.  While red wolf morphs have slightly weaker bites than their larger timber wolf morph cousins, they can use their increased agility to harry an opponent in combat, giving them more chances to land a hit.</description>
         <classInfluence>RedWolfMorph</classInfluence>
         <mutationTale>GrewCanidMuzzle</mutationTale>
         <mutationMemory>RedWolfMuzzleMemory</mutationMemory>
@@ -24,27 +24,42 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
                 <stageKey>adapting</stageKey>
                 <values>
                     <description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with.  The tongue and lips retain some humanlike flexibility which allows [PAWN_objective] a rough form of speech, though it'll take [PAWN_objective] some time to get used to it.</description>
-                    <statOffsets>
-                        <MeleeHitChance>+1.20</MeleeHitChance>
-                    </statOffsets>
+                    <verbOverrides>
+                        <li>
+                            <label>teeth</label>
+                            <chanceFactor>0.5</chanceFactor>
+                            <power>8.0</power>
+                        </li>
+                    </verbOverrides>
                 </values>
             </li>
             <li function="modify">
                 <stageKey>adapted</stageKey>
                 <values>
-                    <description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with, especially now that [PAWN_pronoun]'s had some practice.  The tongue and lips retain some humanlike flexibility allowing [PAWN_objective] a passable (if growly) form of speech now that [PAWN_pronoun] has gotten used to it.</description>
+                    <description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting and harrying prey.  The tongue and lips retain some humanlike flexibility allowing [PAWN_objective] a passable (if growly) form of speech now that [PAWN_pronoun] has gotten used to it.</description>
                     <statOffsets>
-                        <MeleeHitChance>+2.20</MeleeHitChance>
+                        <MeleeHitChance>+1.0</MeleeHitChance>
+                        <MentalBreakThreshold>-0.075</MentalBreakThreshold>
+                        <HuntingStealth>+0.15</HuntingStealth>
                     </statOffsets>
+                    <verbOverrides>
+                        <li>
+                            <label>teeth</label>
+                            <chanceFactor>1.0</chanceFactor>
+                            <power>8.0</power>
+                        </li>
+                    </verbOverrides>
                 </values>
             </li>
             <li function="modify">
                 <stageKey>paragon</stageKey>
                 <values>
-                    <description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting with.  The mechanites have made further modifications and have managed to subtly blend elements of human anatomy into the otherwise-lupine muzzle, allowing [PAWN_objective] to speak and express [PAWN_possessive]self as well as any human despite it.  While [PAWN_nameDef]'s wolfish face may not be beautiful in the traditional sense, the perfectly-sculpted wolf muzzle and head now lends [PAWN_objective] a certain elegance.</description>
+                    <description>A slender, red wolf snout graces [PAWN_nameDef]'s face, completely with a set of fangs and pointed teeth -- perfect for biting and harrying prey.  While [PAWN_nameDef]'s wolfish face may not be beautiful in the traditional sense, the perfectly-sculpted wolf muzzle and head now lends [PAWN_objective] a certain feral elegance.</description>
                     <statOffsets>
-                        <Beauty>+0.50</Beauty>
-                        <MeleeHitChance>+2.20</MeleeHitChance>
+                        <Beauty>+0.5</Beauty>
+                        <MeleeHitChance>+2.0</MeleeHitChance>
+                        <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+                        <HuntingStealth>+0.2</HuntingStealth>
                     </statOffsets>
                 </values>
             </li>
@@ -87,10 +102,28 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
             <li function="modify">
                 <stageKey>grown</stageKey>
                 <values>
-                    <description>A large, fuzzy red wolf ear crowns [PAWN_nameDef]'s head, flicking and turning independently at the slightest sound of prey.  It tends to fold back any time [PAWN_nameDef] finds [PAWN_objective]self nervous or uncertain.</description>
+                    <description>A large, fuzzy red wolf ear crowns [PAWN_nameDef]'s head, flicking and turning independently at the slightest sound of prey or a threat.  It tends to fold back any time [PAWN_nameDef] finds [PAWN_objective]self nervous or uncertain.  This skittishness is distracting, but serves [PAWN_nameDef] well in combat, helping [PAWN_objective] avoid incoming blows.</description>
+                    <statOffsets>
+                        <HuntingStealth>+0.075</HuntingStealth>
+                        <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+                        <MeleeDodgeChance>+1.0</MeleeDodgeChance>
+                    </statOffsets>
                 </values>
             </li>
         </stagePatches>
+        <stages>
+            <li Class="Pawnmorph.Hediffs.MutationStage">
+                <key>paragon</key>
+                <label>paragon</label>
+                <minSeverity>2.5</minSeverity>
+                <description>A large, fuzzy red wolf ear crowns [PAWN_nameDef]'s head, flicking and turning independently at the slightest sound of prey or a threat.  It tends to fold back any time [PAWN_nameDef] finds [PAWN_objective]self nervous or uncertain.  [PAWN_nameDef] has honed this skittishness into a sixth sense, letting [PAWN_objective] sense incoming attacks almost before they occur.</description>
+                <statOffsets>
+                    <HuntingStealth>+0.075</HuntingStealth>
+                    <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+                    <MeleeDodgeChance>+2.0</MeleeDodgeChance>
+                </statOffsets>
+            </li>
+        </stages>
     </Pawnmorph.Hediffs.MutationDef>
 
     <!-- Tail -->
@@ -122,6 +155,7 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
                 <values>
                     <description>[PAWN_nameDef]'s tail is reaching its full length, and has started to wag and emote.  It's cute, but it tends to betray [PAWN_possessive] mood at the worst times.</description>
                     <statOffsets>
+                        <!-- Same as base, but with an extra penalty to trade price because the tail betrays you >:3 -->
                         <TradePriceImprovement>-0.10</TradePriceImprovement>
                         <MentalBreakThreshold>-0.0375</MentalBreakThreshold>
                         <HuntingStealth>+0.05</HuntingStealth>
@@ -141,43 +175,45 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
     <Pawnmorph.Hediffs.MutationDef ParentName="PawnmorphGenericEyePart">
         <defName>EtherRedWolfEye</defName>
         <label>red wolf eye</label>
-        <description>Golden- or orange-colored wolf eyes with a large, black-ringed iris.  They look striking, especially on a mutated human, but alas they are red-green colorblind.  They also have inferior visual acuity compared to a human's eyes, but they're well adapted to noticing motion.  A morph with these eyes will suffer at most vision-related tasks but once they adapt to the specialized senses they will fare better in melee combat than a baseline human.</description>
+        <description>Golden- or orange-colored wolf eyes with a large, black-ringed iris.  They look striking, especially on a mutated human, but alas they are red-green colorblind.  They also have inferior visual acuity compared to a human's eyes, but they're well adapted to noticing motion.
+        
+A morph with these eyes will suffer slightly at most vision-related tasks and significantly at ranged combat, but once they adapt to their specialized senses they will fare much better in melee combat than a baseline human.</description>
         <classInfluence>RedWolfMorph</classInfluence>
         <mutationMemory>RedWolfEyeMemory</mutationMemory>
         <stagePatches>
             <li function="modify">
                 <stageKey>initial</stageKey>
                 <values>
-	                <description>[PAWN_nameDef]'s eyes are turning gold.  Striking, but so far the change doesn't seem to have any practical effect.</description>
+                    <description>[PAWN_nameDef]'s eyes are turning gold.  Striking, but so far the change doesn't seem to have any practical effect.</description>
                 </values>
             </li>
             <li function="modify">
                 <stageKey>unfamiliar</stageKey>
                 <values>
-		            <description>[PAWN_nameDef]'s golden eyes have become increasingly wolflike, losing the ability to differentiate red and green along with some visual acuity.  With time, [PAWN_pronoun] should be able to partially adapt to the difference.</description>
-		            <partEfficiencyOffset>-0.30</partEfficiencyOffset>
+                    <description>[PAWN_nameDef]'s golden eyes have become increasingly wolflike, losing the ability to differentiate red and green along with some visual acuity.  With time, [PAWN_pronoun] should be able to mostly adapt to the difference.</description>
+                    <partEfficiencyOffset>-0.20</partEfficiencyOffset>
                 </values>
             </li>
             <li function="modify">
                 <stageKey>adapting</stageKey>
                 <values>
-		            <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, but alas they leave [PAWN_pronoun] red-green colorblind.  [PAWN_pronoun] has gotten used to them, and has started to hone [PAWN_possessive] hunting instincts to make use of their extra motion sensitivity in combat.</description>
-		            <partEfficiencyOffset>-0.20</partEfficiencyOffset>
-		            <statOffsets>
-		                <MeleeHitChance>+1.2</MeleeHitChance>
-		                <MeleeDodgeChance>+0.6</MeleeDodgeChance>
-		            </statOffsets>
+                    <description>[PAWN_nameDef] now has the golden eyes of a wolf.  They're quite intimidating, but alas they leave [PAWN_pronoun] red-green colorblind.  [PAWN_pronoun] is getting used to them for ordinary tasks, but [PAWN_pronoun] will find it harder to aim at distant targets.</description>
+                    <partEfficiencyOffset>-0.05</partEfficiencyOffset>
+                    <statOffsets>
+                        <ShootingAccuracyPawn>-1.2</ShootingAccuracyPawn>
+                    </statOffsets>
                 </values>
             </li>
             <li function="modify">
                 <stageKey>adapted</stageKey>
                 <values>
-		            <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, but alas they leave [PAWN_pronoun] red-green colorblind. [PAWN_pronoun]'s sharp hunting instincts more than make up for the lack lack in melee combat.</description>
-		            <partEfficiencyOffset>-0.20</partEfficiencyOffset>
-		            <statOffsets>
-		                <MeleeHitChance>+1.7</MeleeHitChance>
-		                <MeleeDodgeChance>+0.8</MeleeDodgeChance>
-		            </statOffsets>
+                    <description>[PAWN_nameDef] now has the golden eyes of a wolf.  They're quite intimidating, but alas they leave [PAWN_pronoun] red-green colorblind.  This interferes slightly with normal tasks and significantly with long-distance shooting, but [PAWN_nameDef] can make good use of their motion sensitivity in a fight.</description>
+                    <partEfficiencyOffset>-0.05</partEfficiencyOffset>
+                    <statOffsets>
+                        <MeleeHitChance>+1.8</MeleeHitChance>
+                        <MeleeDodgeChance>+1.2</MeleeDodgeChance>
+                        <ShootingAccuracyPawn>-1.2</ShootingAccuracyPawn>
+                    </statOffsets>
                 </values>
             </li>
         </stagePatches>
@@ -186,11 +222,11 @@ Wolves are known for hunting with their teeth and not their claws, and wolfmorph
                 <key>paragon</key>
                 <label>paragon</label>
                 <minSeverity>2.5</minSeverity>
-                <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, and thanks to further adaption by the mechanites, have regained most of their tri-color vision.  The combination of a predator's hunting instincts and a human's tri-color vision gives [PAWN_objective] an overwhelming advantage against [PAWN_possessive] prey in melee combat.</description>
-                <partEfficiencyOffset>-0.05</partEfficiencyOffset>
+                <description>[PAWN_nameDef] now has a striking set of gold-colored wolf eyes.  They're quite intimidating, and thanks to further adaption by the mechanites, have regained most of their tri-color vision.  The combination of a predator's hunting instincts and a human's tri-color vision gives [PAWN_objective] an overwhelming advantage against [PAWN_possessive] prey in melee combat.  They still suffer at long-distance shooting, however.</description>
                 <statOffsets>
-                    <MeleeHitChance>+1.8</MeleeHitChance>
-                    <MeleeDodgeChance>+1.2</MeleeDodgeChance>
+                    <MeleeHitChance>+2.5</MeleeHitChance>
+                    <MeleeDodgeChance>+2.0</MeleeDodgeChance>
+                    <ShootingAccuracyPawn>-1.2</ShootingAccuracyPawn>
                 </statOffsets>
             </li>
         </stages>
