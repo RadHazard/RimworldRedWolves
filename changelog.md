@@ -1,3 +1,10 @@
+# v1.5.1 - PM Update
+**Technical**
+- Updated red wolf morphs to be compatible with the new version of Pawnmorpher.
+
+**Balance**
+- Rebalanced red wolf morphs to fit the new balance of Pawnmorpher.  They are geared toward being fragile melee specialists compared to timber wolf morphs.  They have better bonuses to melee combat, but less health and penalties to ranged combat.
+
 # v1.5.0 - Wolf Armor! (Animal Equipment support)
 **Features**
 - Added wolf armor, using the wonderful Animal Gear and Animal Equipment mods.  Requires both mods to work.
