@@ -1,3 +1,7 @@
+# v1.6.0 - Rimworld 1.4 Update
+**Features**
+- Updated to Rimworld 1.4 (Still compatable with 1.3 and earlier versions)
+
 # v1.5.1 - PM Update
 **Technical**
 - Updated red wolf morphs to be compatible with the new version of Pawnmorpher.
